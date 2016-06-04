@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <!--<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />-->
+
+    <link href="M_and_B_Styles.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+
+    <div id="Navigationbar">
+        <a href="Home.aspx">Home</a>
+
+    </div>
+
+    <div id="Content">
+        <asp:ContentPlaceHolder ID="content" runat="server">
+    
+            <p>
+                ksklasklsdalksjdalksdalksjdaljLKJLKSDAJLKSD</p>
+            <p>
+                SDKFSLDKFSDKFSDKFJLSDKFJSDKFJSDKFJLSDK;AS</p>
+            <p>
+                S,DFNSAKDFJ;SLADFKSALFKLSKDFLSDKFJMSLDKFJSLDKFJSLDKF</p>
+            <p>
+                SAKDJF;LSAKDFJASL&#39;DFK&#39;SA;LDFKA&#39;S;LDFKSADL;FKLSADFKLSAFJSFJ</p>
+            <p>
+                LSAKDFLSAKDFJLSAKDFJLSKADFJALSKDFJLASKFJLASKDJFLASDKFJLSK</p>
+            <p>
+                LKADSFLSAKDFJSLADKFJLSKADFJLSAKDFJLSAKDFJLSADKFJLSAKDFJLSADKFJS</p>
+            <p>
+                KSDFSKLADFJ;SAOLFKASDFJ;LSAKDFJLSAKFJSLAKDFJSALKFJ;ASLKJSAL;</p>
+    
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="SideBar">
+        <asp:ContentPlaceHolder ID="sidebar" runat="server">
+            <div class="sidenavigation">
+                <a href="Repairs.aspx">Repairs</a>
+            </div>
+            <div class="sidenavigation">
+                <a href="Mechanics.aspx">My Mechanics</a>
+            </div>
+            <div class="sidenavigation">
+                <a href="Customers.aspx">Customers</a>
+            </div>
+            <div class="sidenavigation">
+                <a href="Cashiers.aspx">Cashiers</a>
+            </div>
+            <div class="sidenavigation">
+                <a href="Reports.aspx">Reports</a>
+            </div>
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    
+    <div id="footer">
+    <hr />
+    &copy M&B Hardware cpoy rights reserved
+    ved
+    <hr />
+    </div>
+    
+
+
+   <!-- <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    My ASP.NET Application
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div> 
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div> -->
+    </form>
+</body>
+</html>

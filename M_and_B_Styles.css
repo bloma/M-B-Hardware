@@ -1,0 +1,42 @@
+﻿body 
+{
+    
+    background-color:rgb(200,200,250);
+    font-family:Arial;
+    
+}
+
+.footer
+{
+    clear:left;
+}
+
+#sidebar
+{
+    float:left;
+    width:15%;
+    height:200px;
+    color:#FFFFFF;
+    background-color:#000066;
+    direction:ltr;
+}
+#content
+{
+    margin-left:200px;
+}
+
+.navigationbar
+{
+    color:#FFFFFF;
+    background-color:#000066;
+}
+
+.sidenavigation
+{
+    font-size:1em;
+    line-height:2em;
+}
+    
+    
+    
+
