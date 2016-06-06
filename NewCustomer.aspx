@@ -44,7 +44,7 @@
 
   </div>
   <div class="panel-footer">
-      <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-primary btn-lg btn-block" />
+      <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-primary btn-lg btn-block" OnClick="Button1_Click" />
   </div>
 </div>
 
