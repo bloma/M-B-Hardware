@@ -168,65 +168,17 @@
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Order #</th>
-                                            <th>Order Date</th>
-                                            <th>Order Time</th>
-                                            <th>Amount (USD)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3326</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:29 PM</td>
-                                            <td>$321.33</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3325</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:20 PM</td>
-                                            <td>$234.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3324</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:03 PM</td>
-                                            <td>$724.17</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3323</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:00 PM</td>
-                                            <td>$23.71</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3322</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:49 PM</td>
-                                            <td>$8345.23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3321</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:23 PM</td>
-                                            <td>$245.12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3320</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:15 PM</td>
-                                            <td>$5663.54</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3319</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:13 PM</td>
-                                            <td>$943.45</td>
-                                        </tr>
-                                    </tbody>
+                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="513px">
+                                    <Columns>
+                                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                    </Columns>
+                                </asp:GridView>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName], [Email] FROM [customers]"></asp:SqlDataSource>
                                 </table>
+                                
+                               
                             </div>
                             <div class="text-right">
                                 <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
