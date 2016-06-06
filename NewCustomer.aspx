@@ -30,16 +30,16 @@
   <div class="panel-body">
         <div class="form-group">
 
-        Name   <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        Name   <asp:TextBox ID="txtName" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
       <div class="form-group">
-        Sirname  <asp:TextBox ID="txtSirName" runat="server"></asp:TextBox>
+        Sirname  <asp:TextBox ID="txtSirName" runat="server" CssClass="form-control"></asp:TextBox>
           </div>
       <div class="form-group">
-        Email  <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        Email  <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
       </div>
       <div class="form-group">
-        Phone <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+        Phone <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control"></asp:TextBox>
           </div>
 
   </div>

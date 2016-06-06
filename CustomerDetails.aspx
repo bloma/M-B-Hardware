@@ -22,7 +22,7 @@
     <!-- /.row -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
-   <div class="row">
+    <div class="row">
         <div class="col-lg-4">
             <div class="row">
                 <div class="col-md-12">
@@ -75,11 +75,25 @@
                             <h3 class="panel-title">Customer Profile</h3>
                         </div>
                         <div class="panel-body">
-                            <h4>Fullname : </h4>
-                            <h4>Age : </h4>
-                            <h4>Phone # : </h4>
-                            <h4>Email : </h4>
-                            <h4>Address : </h4>
+                            <h4>Fullname
+                                <asp:CheckBox ID="cbxFulName" runat="server"/>
+                                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                            </h4>
+                            <h4>Age
+                                <asp:CheckBox ID="cbxAge" runat="server" />
+                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                            </h4>
+                            <h4>Phone&nbsp;<asp:CheckBox ID="cbxPhone" runat="server" />
+                            &nbsp;<asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                            </h4>
+                            <h4>Email
+                                <asp:CheckBox ID="cbxEmail" runat="server" />
+                                <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                            </h4>
+                            <h4>Address
+                                <asp:CheckBox ID="cbxAddress" runat="server" />
+                                <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                            </h4>
                         </div>
                     </div>
                 
