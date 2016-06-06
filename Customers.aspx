@@ -42,6 +42,7 @@
             </div>
         </div>
         <div class="col-lg-8">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>Full List</h3>
