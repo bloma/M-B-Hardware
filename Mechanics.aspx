@@ -53,22 +53,18 @@
                 <div class="panel-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-striped">
-                            <thead>
-
-                                <tr>
-                                    <th>Full Name</th>
-                                </tr>
-
-                            </thead>
-                            <tbody>
-                                 
-                                <tr data-href="MachanicDetails.aspx">
-                                    <td>Crish Patos</td>
-                                    
-                                </tr>
-
-                            </tbody>
+                            
                         </table>
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="mechanicID" DataSourceID="SqlMechanic" Width="482px">
+                            <Columns>
+                                <asp:BoundField DataField="mechanicID" HeaderText="mechanicID" InsertVisible="False" ReadOnly="True" SortExpression="mechanicID" />
+                                <asp:BoundField DataField="firstName" HeaderText="firstName" SortExpression="firstName" />
+                                <asp:BoundField DataField="lastName" HeaderText="lastName" SortExpression="lastName" />
+                                <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
+                                <asp:BoundField DataField="phone" HeaderText="phone" SortExpression="phone" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:SqlDataSource ID="SqlMechanic" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [mechanic]"></asp:SqlDataSource>
                     </div>
                 </div>
             </div>

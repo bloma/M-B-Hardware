@@ -50,39 +50,18 @@
                 <div class="panel-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-striped">
-                            <thead>
-
-                                <tr>
-                                    <th>Full Name</th>
-                                    <th>Orders</th>
-                                    <th>Items</th>
-                                    <th>Amount (R)</th>
-                                </tr>
-
-                            </thead>
-                            <tbody>
-                                 
-                                <tr data-href="CustomerDetails.aspx">
-                                    <td>Ayanda Patos</td>
-                                    <td>12</td>
-                                    <td>12</td>
-                                    <td>R321.33</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Vuyo Gwege</td>
-                                    <td>12</td>
-                                    <td>12</td>
-                                    <td>R321.33</td>
-                                </tr>
-                                <tr>
-                                    <td>Sibuyi Mnene</td>
-                                    <td>12</td>
-                                    <td>12</td>
-                                    <td>R321.33</td>
-                                </tr>
-                            </tbody>
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="customerID" DataSourceID="SqlCustomers" Width="497px">
+                            <Columns>
+                                <asp:BoundField DataField="customerID" HeaderText="customerID" InsertVisible="False" ReadOnly="True" SortExpression="customerID" />
+                                <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                                <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:SqlDataSource ID="SqlCustomers" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [customers]"></asp:SqlDataSource>
                         </table>
+                        
                     </div>
                 </div>
             </div>
