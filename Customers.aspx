@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#">
+                <a href="NewCustomer.aspx">
                     <div class="panel-footer">
                         <span class="pull-left">Add Now</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-up"></i></span>
