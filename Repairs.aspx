@@ -8,10 +8,10 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <i class="fa fa-home"></i><a href="Default.aspx">Home</a>
+                    <i class="fa fa-home"></i><a href="Default.aspx"> Home</a>
                 </li>
                 <li class="active">
-                    <i class="fa fa-wrench"></i>Repairs
+                    <i class="fa fa-wrench"></i> Repairs
                 </li>
             </ol>
         </div>
@@ -21,13 +21,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <div class="row">
         <div class="col-lg-4">
-            <h2>Hardware Status</h2>
-            <div class="list-group">
+            
+              <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Repair Status</h3>
+                        </div>
+                        <div class="panel-body">
+                             <div class="list-group">
                 <asp:LinkButton ID="linkFullList" runat="server" CssClass="list-group-item active" OnClick="LinkButton1_Click">Full List</asp:LinkButton>
                 <asp:LinkButton ID="Repaired" runat="server" CssClass="list-group-item" OnClick="Repaired_Click"> Repaired</asp:LinkButton>
                 <asp:LinkButton ID="InProgress" runat="server" CssClass="list-group-item" OnClick="InProgress_Click">In Progress</asp:LinkButton>
                 <asp:LinkButton ID="WaitingList" runat="server" CssClass="list-group-item" OnClick="WaitingList_Click">Waiting List</asp:LinkButton>
                 <asp:LinkButton ID="BeyondRepair" runat="server" CssClass="list-group-item" OnClick="BeyondRepair_Click">Beyond Repair</asp:LinkButton>&nbsp;</div>
+                        </div>
+                    </div>
+          
         </div>
         <div class="col-lg-8">
           
@@ -41,7 +49,7 @@
              
                     <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>Full List</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Full List</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -114,7 +122,7 @@
             <asp:View runat="server">
          <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>Repaired</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Repaired</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -186,7 +194,7 @@
     <asp:View runat="server">
          <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>In Progress</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> In Progress</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -258,7 +266,7 @@
             <asp:View runat="server">
          <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>Waiting List</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Waiting List</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -330,7 +338,7 @@
             <asp:View runat="server">
          <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i>Beyond Repair</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Beyond Repair</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
