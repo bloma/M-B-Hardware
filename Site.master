@@ -150,19 +150,22 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
                         <li>
-                            <a href="Default.aspx"><i class="fa fa-fw fa-home"></i>Home</a>
+                            <a href="Default.aspx"><i class="fa fa-fw fa-home"></i> Home</a>
                         </li>
                         <li>
-                            <a href="Repairs.aspx"><i class="fa fa-fw fa-wrench"></i>Repairs</a>
+                            <a href="Orders.aspx"><i class="fa fa-fw fa-shopping-cart"></i> Orders</a>
                         </li>
                         <li>
-                            <a href="Customers.aspx"><i class="fa fa-fw fa-users"></i>Customers</a>
+                            <a href="Repairs.aspx"><i class="fa fa-fw fa-wrench"></i> Repairs</a>
                         </li>
                         <li>
-                            <a href="Mechanics.aspx"><i class="fa fa-fw fa-user"></i>Machanics</a>
+                            <a href="Customers.aspx"><i class="fa fa-fw fa-users"></i> Customers</a>
                         </li>
                         <li>
-                            <a href="Reports.aspx"><i class="fa fa-fw fa-bar-chart-o"></i>Reports</a>
+                            <a href="Mechanics.aspx"><i class="fa fa-fw fa-user"></i> Machanics</a>
+                        </li>
+                        <li>
+                            <a href="Reports.aspx"><i class="fa fa-fw fa-bar-chart-o"></i> Reports</a>
                         </li>
                         <li>
                             <a href="About.aspx"><i class="fa fa-fw "></i>About</a>
