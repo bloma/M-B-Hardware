@@ -28,33 +28,24 @@
             <div class="panel panel-default panel-green">
                 <div class="panel-heading">Customer Details</div>
   <div class="panel-body">
-    <div class="form-group">
-                <label>Name</label>
-                <input class="form-control" />
-                <p class="help-block">Example block-level help text here.</p>
+        <div class="form-group">
+
+        Name   <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
             </div>
-            <div class="form-group">
-                <label>Sirname</label>
-                <input class="form-control" />
-                <p class="help-block">Example block-level help text here.</p>
-            </div>
-            <div class="form-group">
-                <label>Date of birth</label>
-                <input class="form-control" />
-                <p class="help-block">Example block-level help text here.</p>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input class="form-control" />
-                <p class="help-block">Example block-level help text here.</p>
-            </div>
-            <div class="form-group">
-                <label>Phone</label>
-                <input class="form-control" />
-                <p class="help-block">Example block-level help text here.</p>
-            </div>
+      <div class="form-group">
+        Sirname  <asp:TextBox ID="txtSirName" runat="server"></asp:TextBox>
+          </div>
+      <div class="form-group">
+        Email  <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+      </div>
+      <div class="form-group">
+        Phone <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+          </div>
+
   </div>
-  <div class="panel-footer"><button type="button" class="btn btn-primary btn-lg btn-block">Submit</button></div>
+  <div class="panel-footer">
+      <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-primary btn-lg btn-block" />
+  </div>
 </div>
 
             
