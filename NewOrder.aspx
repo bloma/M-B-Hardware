@@ -27,7 +27,7 @@
             </div>
         <div class="col-lg-6">
             <div class="panel panel-default panel-green">
-                <div class="panel-heading">Customer Details</div>
+                <div class="panel-heading">Item Details</div>
   <div class="panel-body">
         <div class="form-group">
         
