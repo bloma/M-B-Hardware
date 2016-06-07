@@ -167,27 +167,14 @@
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <%--<table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Order #</th>
-                                            <th>Order Date</th>
-                                            <th>Order Time</th>
-                                            <th>Amount (USD)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3326</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:29 PM</td>
-                                            <td>$321.33</td>
-                                        </tr>
-                                 
-                                    </tbody>
-                                </table>--%>
-                                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
-                                    <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                <table class="table table-bordered table-hover table-striped">
+                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
+                                    <Columns>
+                                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                    </Columns>
+                                     <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                                     <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                                     <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
                                     <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
@@ -196,8 +183,9 @@
                                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
                                     <SortedDescendingHeaderStyle BackColor="#242121" />
                                 </asp:GridView>
-
-
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName], [Email] FROM [customers]"></asp:SqlDataSource>
+                                </table>
+      
                             </div>
                             <div class="text-right">
                                 <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
