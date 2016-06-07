@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="Repairs.aspx">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -43,7 +43,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12">
+                <%--<div class="col-lg-12 col-md-12">
                     <div class="panel panel-green">
                         <div class="panel-heading">
                             <div class="row">
@@ -64,7 +64,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div>--%>
                 <div class="col-lg-12 col-md-12">
                     <div class="panel panel-yellow">
                         <div class="panel-heading">
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="Customers.aspx">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -167,7 +167,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
+                                <%--<table class="table table-bordered table-hover table-striped">
                                     <thead>
                                         <tr>
                                             <th>Order #</th>
@@ -183,50 +183,21 @@
                                             <td>3:29 PM</td>
                                             <td>$321.33</td>
                                         </tr>
-                                        <tr>
-                                            <td>3325</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:20 PM</td>
-                                            <td>$234.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3324</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:03 PM</td>
-                                            <td>$724.17</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3323</td>
-                                            <td>10/21/2013</td>
-                                            <td>3:00 PM</td>
-                                            <td>$23.71</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3322</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:49 PM</td>
-                                            <td>$8345.23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3321</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:23 PM</td>
-                                            <td>$245.12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3320</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:15 PM</td>
-                                            <td>$5663.54</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3319</td>
-                                            <td>10/21/2013</td>
-                                            <td>2:13 PM</td>
-                                            <td>$943.45</td>
-                                        </tr>
+                                 
                                     </tbody>
-                                </table>
+                                </table>--%>
+                                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
+                                    <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                                    <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                                    <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                                    <SortedDescendingHeaderStyle BackColor="#242121" />
+                                </asp:GridView>
+
+
                             </div>
                             <div class="text-right">
                                 <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>

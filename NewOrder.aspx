@@ -27,11 +27,11 @@
             </div>
         <div class="col-lg-6">
             <div class="panel panel-default panel-green">
-                <div class="panel-heading">Item Details</div>
+                <div class="panel-heading">&nbsp;Details</div>
   <div class="panel-body">
         <div class="form-group">
         
-        Customer Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control" Height="22px" Width="89px"></asp:DropDownList> 
+        Customer Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control selectpicker" Height="22px" Width="89px"></asp:DropDownList> 
            
              </div>
       <div class="form-group">
@@ -53,5 +53,7 @@
             
         </div>
     </div>
+
+   
 </asp:Content>
 

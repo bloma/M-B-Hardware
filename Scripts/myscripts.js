@@ -3,6 +3,15 @@
 });
 
 
+
+   $(document).ready(function () {
+
+       $(".selectpicker").selectpicker();
+
+   });
+
+
+
 //function toggleDiv(divId) {
 //    $("#"+divId).toggle();
 //}
