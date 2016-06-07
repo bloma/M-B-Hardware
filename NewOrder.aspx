@@ -31,15 +31,9 @@
   <div class="panel-body">
         <div class="form-group">
         
-<<<<<<< HEAD
-        Customer Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control" Height="46px" Width="192px" DataSourceID="SqlDataSource1" DataTextField="FirstName" DataValueField="LastName">
-                <asp:ListItem></asp:ListItem>
-            </asp:DropDownList> 
-           
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName] FROM [customers]"></asp:SqlDataSource>
-=======
-        Customer Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control selectpicker" Height="22px" Width="89px"></asp:DropDownList> 
->>>>>>> eba782c34df014aa671920dc8fc5bdb185d8353b
+
+        Customer+ Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control selectpicker" Height="22px" Width="89px"></asp:DropDownList> 
+
            
              </div>
       <div class="form-group">
