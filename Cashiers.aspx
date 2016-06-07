@@ -19,7 +19,6 @@
     <!-- /.row -->
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
 </asp:Content>
 

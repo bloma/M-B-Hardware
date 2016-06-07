@@ -8,10 +8,10 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <i class="fa fa-home"></i><a href="Default.aspx">Home</a>
+                    <i class="fa fa-home"></i><a href="Default.aspx"> Home</a>
                 </li>
                 <li class="active">
-                    <i class="fa fa-file"></i>About
+                    <i class="fa fa-file"></i> About
                 </li>
             </ol>
         </div>

@@ -170,7 +170,7 @@
                             <a href="Reports.aspx"><i class="fa fa-fw fa-bar-chart-o"></i> Reports</a>
                         </li>
                         <li>
-                            <a href="About.aspx"><i class="fa fa-fw "></i>About</a>
+                            <a href="About.aspx"><i class="fa fa-fw fa-file"></i>About</a>
                         </li>
                         <%--<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
