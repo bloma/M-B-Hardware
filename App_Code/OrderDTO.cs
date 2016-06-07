@@ -8,10 +8,6 @@ using System.Web;
 /// </summary>
 public class OrderDTO
 {
-    public OrderDTO()
-    {
-        //
-        // TODO: Add constructor logic here
-        //
-    }
+    public String orderDate { set; get; }
+    public String description { set; get; }
 }
