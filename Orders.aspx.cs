@@ -11,4 +11,9 @@ public partial class Orders : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("NewOrder.aspx");
+    }
 }

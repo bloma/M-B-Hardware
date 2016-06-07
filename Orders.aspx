@@ -26,7 +26,7 @@
                             <h3 class="panel-title">New Order</h3>
                         </div>
                         <div class="panel-body">
-                             <asp:Button ID="Button1" runat="server" Text="Create Order" CssClass="btn btn-primary btn-lg btn-block" />
+                             <asp:Button ID="Button1" runat="server" Text="Create Order" CssClass="btn btn-primary btn-lg btn-block" OnClick="Button1_Click" />
                         </div>
                     </div>
         </div>
