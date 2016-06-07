@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="Repairs.aspx">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -43,7 +43,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12">
+                <%--<div class="col-lg-12 col-md-12">
                     <div class="panel panel-green">
                         <div class="panel-heading">
                             <div class="row">
@@ -64,7 +64,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div>--%>
                 <div class="col-lg-12 col-md-12">
                     <div class="panel panel-yellow">
                         <div class="panel-heading">
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="Customers.aspx">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -168,17 +168,24 @@
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover table-striped">
-                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="513px">
+                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
                                     <Columns>
                                         <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
                                         <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
                                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                                     </Columns>
+                                     <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                                    <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                                    <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                                    <SortedDescendingHeaderStyle BackColor="#242121" />
                                 </asp:GridView>
                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName], [Email] FROM [customers]"></asp:SqlDataSource>
                                 </table>
-                                
-                               
+      
                             </div>
                             <div class="text-right">
                                 <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>

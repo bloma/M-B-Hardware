@@ -50,7 +50,7 @@
                 <div class="panel-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-striped">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="customerID" DataSourceID="SqlCustomers" Width="497px">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="customerID" DataSourceID="SqlCustomers"  BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
                             <Columns>
                                 <asp:BoundField DataField="customerID" HeaderText="customerID" InsertVisible="False" ReadOnly="True" SortExpression="customerID" />
                                 <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
@@ -58,6 +58,14 @@
                                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                                 <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
                             </Columns>
+                                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                                    <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                                    <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                                    <SortedDescendingHeaderStyle BackColor="#242121" />
                         </asp:GridView>
                         <asp:SqlDataSource ID="SqlCustomers" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [customers]"></asp:SqlDataSource>
                         </table>
