@@ -8,7 +8,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li class="active">
-                    <i class="fa fa-home"></i><a href="Default.aspx"> Home</a>
+                    <i class="fa fa-home"></i><a href="Default.aspx">Home</a>
                 </li>
 
             </ol>
@@ -29,7 +29,10 @@
                                     <i class="fa fa-wrench fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
+                                    
+                                    
+                                    <div class="huge">
+                                        <asp:Label ID="countCust" runat="server" Text="0"></asp:Label></div>
                                     <div>Repaired Hardwares!</div>
                                 </div>
                             </div>
@@ -167,14 +170,14 @@
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="table table-bordered table-hover table-striped" ForeColor="Black" GridLines="Horizontal">
+
+                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CssClass="tablen table-borderedn table-hovern table-stripedn" ForeColor="Black" GridLines="Horizontal" DataKeyNames="invoiceID" Width="757px">
                                     <Columns>
-                                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
-                                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                        <asp:BoundField DataField="invoiceID" HeaderText="invoiceID" SortExpression="invoiceID" InsertVisible="False" ReadOnly="True" />
+                                        <asp:BoundField DataField="invoiceDate" HeaderText="invoiceDate" SortExpression="invoiceDate" />
+                                        <asp:BoundField DataField="orderID" HeaderText="orderID" SortExpression="orderID" />
                                     </Columns>
-                                     <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                    <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                                     <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                                     <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
                                     <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
@@ -183,9 +186,11 @@
                                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
                                     <SortedDescendingHeaderStyle BackColor="#242121" />
                                 </asp:GridView>
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName], [Email] FROM [customers]"></asp:SqlDataSource>
-                                </table>
-      
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [invoiceID], [invoiceDate], [orderID] FROM [invoice]"></asp:SqlDataSource>
+
+
+
+
                             </div>
                             <div class="text-right">
                                 <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>

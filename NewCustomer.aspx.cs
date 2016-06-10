@@ -48,6 +48,8 @@ public partial class NewCustomer : System.Web.UI.Page
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
+
+
             }
         }
 

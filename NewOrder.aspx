@@ -32,7 +32,7 @@
         <div class="form-group">
         
 
-        Customer+ Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control selectpicker" Height="22px" Width="89px"></asp:DropDownList> 
+        Customer+ Name <asp:DropDownList ID="CustNameList" runat="server" CssClass="form-control selectpicker"></asp:DropDownList> 
 
            
              </div>
@@ -43,9 +43,8 @@
           Issue  <asp:TextBox ID="txtIssue" runat="server" CssClass="form-control"></asp:TextBox>
       </div>
       <div class="form-group">
-          Description <asp:TextBox ID="txtDescription" runat="server" Rows="10" CssClass="form-control" TextMode="MultiLine" Width="429px"></asp:TextBox>
+          Description <asp:TextBox ID="txtDescription" runat="server" Rows="10" CssClass="form-control" TextMode="MultiLine" ></asp:TextBox>
           </div>
-
   </div>
   <div class="panel-footer">
       <asp:Button ID="Button1" runat="server" Text="Procsess Order" CssClass="btn btn-primary btn-lg btn-block" OnClick="Button1_Click" />
